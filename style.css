@@ -1,0 +1,81 @@
+/* CSS Reset/Preset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;  /* Ensure padding and border are included in element’s width and height */
+    margin: 0;
+    padding: 0;
+    font-family: inherit;    /* Inherit fonts across elements */
+    font-size: inherit;      /* Inherit font sizes */
+}
+
+html {
+    font-size: 100%;  /* 16px default, good for rem units */
+    -webkit-font-smoothing: antialiased;  /* Improve text rendering on MacOS and iOS */
+    -moz-osx-font-smoothing: grayscale;   /* Improve text rendering on MacOS */
+}
+
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;  /* You can customize the default font */
+    background-color: #f4f4f4;       /* Background color for body */
+    color: #333;                     /* Basic text color */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;              /* Prevent horizontal scroll issues */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;  /* Inherit color so that links match text color by default */
+}
+
+ul, ol {
+    list-style: none;  /* Remove default list styles */
+}
+
+img {
+    max-width: 100%;  /* Ensure images are responsive */
+    height: auto;
+    display: block;
+}
+
+/* For better form element handling */
+input, button, textarea, select {
+    font: inherit;  /* Ensure all form elements inherit the body font */
+}
+
+button {
+    cursor: pointer;  /* Make buttons have pointer cursor */
+}
+
+/* Remove outline on links in Firefox */
+a:focus {
+    outline: none;
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;  /* Remove bold font */
+    line-height: 1.25;    /* Ensure better readability */
+}
+
+/* Use border-box for everything */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.root {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
