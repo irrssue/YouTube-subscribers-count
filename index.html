@@ -15,27 +15,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="model.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="root.css">
 
 </head>
 <body>
-  <div class="root">
-    <h1 class="title">
-      Current Subscribers
-    </h1>
-    
-    <div class="input-box">
-      <label for="channel-username">Enter Channel Username:</label>
-      <input type="text" id="channel-username" placeholder="@YourChannel" />
-      <button onclick="getSubscriberInfo()">Submit</button>
-    </div>
-
-    <!-- Display Box for Subscriber Count -->
-    <div class="display-box">
-      <p id="subscriber-count">Subscribers: N/A</p> <!-- Placeholder for the subscriber count -->
-      <a id="view-channel" class="view-channel" href="#" target="_blank">View Channel</a> <!-- Dynamic link -->
-    </div>
+<!-- Modal Popup for entering YouTube channel username -->
+<div id="popup-modal" class="modal">
+  <div class="modal-content">
+    <h2>Enter Your YouTube Channel Username</h2>
+    <input type="text" id="channel-username" placeholder="@YourChannel" />
+    <button onclick="submitUsername()">Submit</button>
   </div>
+</div>
+
+<!-- Main content for displaying subscriber count -->
+<div class="root" id="main-content" style="display:none;">
+  <h1 class="title">Current Subscriber</h1>
+  <div class="display-box">
+    <p id="subscriber-count">Subscribers: N/A</p>
+    <a id="view-channel" class="view-channel" href="#" target="_blank">View Channel</a>
+  </div>
+</div>
+
 </body>
 </html>

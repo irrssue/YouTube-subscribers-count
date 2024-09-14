@@ -30,7 +30,7 @@
   padding-bottom: 20px;
 }
 
-.view-channel {
+#view-channel {
   border-radius: 12px;
   padding: 5px 10px;
   background-color: black;
@@ -79,4 +79,9 @@
 .button-27:active {
   box-shadow: none;
   transform: translateY(0);
+}
+
+#subscriber-count {
+  padding: 30px;
+  font-size: 20px;
 }
