@@ -13,4 +13,4 @@
 - **HTML5 & CSS3**: For structuring and styling the webpage.
 - **JavaScript (AJAX)**: For fetching data asynchronously from Firebase.
 - **Firebase**: Used as the backend to store and retrieve subscriber data in real-time.
-- **Uizard**: Used to design the initial wireframe and layout of the application.
+- **Uizard**: Used to design the initial wireframe and layout of the application
