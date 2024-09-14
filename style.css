@@ -69,13 +69,23 @@ h1, h2, h3, h4, h5, h6 {
 body {
   width: 100vw;
   height: 100vh;
-}
-
-.root {
   display: flex;
-  width: 100vw;
-  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+
+/* CSS VARIABLES */
+:root {
+    /* COLOR */
+    --main-bg-color: white;
+    --root-bg-color: #d8dee188;
+    --display-box-bg-color: #e4e9eba9;
+
+    /* FONT */
+    --main-title-size: 30px;
+    --main-font-family: "Comfortaa";
+    --second-font-family: "Figtree"
 }
