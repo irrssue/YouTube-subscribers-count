@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SubCount</title>
 
+  <script defer src="script.js"></script>
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,12 +24,17 @@
     <h1 class="title">
       Current Subscribers
     </h1>
+    
+    <div class="input-box">
+      <label for="channel-username">Enter Channel Username:</label>
+      <input type="text" id="channel-username" placeholder="@YourChannel" />
+      <button onclick="getSubscriberInfo()">Submit</button>
+    </div>
+
+    <!-- Display Box for Subscriber Count -->
     <div class="display-box">
-      <p class="subscriber-count">
-        134,314,344
-      </p>
-      <button class="button-27" role="button">View Channel</button>
-      </a>
+      <p id="subscriber-count">Subscribers: N/A</p> <!-- Placeholder for the subscriber count -->
+      <a id="view-channel" class="view-channel" href="#" target="_blank">View Channel</a> <!-- Dynamic link -->
     </div>
   </div>
 </body>
