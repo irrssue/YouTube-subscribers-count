@@ -40,7 +40,9 @@ function submitUsername() {
     .then(data => {
       console.log(data); // Log the API response
       if (data.items && data.items.length > 0) {
-        const subscriberCount = data.items[0].statistics.subscriberCount;
+        let subscriberCount = data.items[0].statistics.subscriberCount;
+
+        subscriberCount = parseInt(subscriberCount).toLocaleString();
 
         // Update the displayed subscriber count
         document.getElementById('subscriber-count').textContent = `Subscribers: ${subscriberCount}`;
